@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: component-python-public
     spec:
       containers:
-      - image: quay.io/codewindbtle/test-images:9d912071c9bf4cdf94592141a973c1be
+      - image: quay.io/codewindbtle/test-images@sha256:8ae822e5dfafdeec476d2221d1ade236306a16d720bebac16a94fa957c0a5950
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
