@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: component-python-public
+  namespace: e2e-demo-qawq
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/codewindbtle/test-images@sha256:8ae822e5dfafdeec476d2221d1ade236306a16d720bebac16a94fa957c0a5950
+        name: container-image
+        resources: {}
+status: {}
